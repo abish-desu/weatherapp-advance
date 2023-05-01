@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
+import ContactForm from '@/components/ContactForm'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
       </Head>
   <Navbar/>
   <Social/>
-    <div>Contact</div>
+ <ContactForm/>
     </>
   )
 }

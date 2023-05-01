@@ -14,7 +14,9 @@ const Blogs = () => {
       </Head>
     <Navbar/>
     <Social/>
-    <div>Blogs</div>
+    <div className='relative flex justify-center items-center h-[32rem]'>
+     <h1 className= "text-7xl text-[#909090]">404 :/</h1>
+    </div>
     </>
   )
 }
