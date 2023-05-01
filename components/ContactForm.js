@@ -9,7 +9,7 @@ const ContactForm = () => {
         <p className='pt-6'>Please leave your message here. I will get back to you as soon as possible.</p>
         <p> Your message does not have to be formal.</p>
     </div>
-    <div className="max-w-xl  ml-auto mr-20 -mt-80 bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="max-w-xl  ml-auto mr-20 -mt-80 bg-white rounded-lg shadow-xl overflow-hidden">
     <div className="px-12 py-20">
       
       <form>
