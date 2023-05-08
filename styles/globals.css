@@ -126,14 +126,14 @@ a {
   
   .about {
     display: flex;
-    min-height: 88vh;
+    min-height: 85vh;
   align-items: center;
   justify-content: center;
   }
   
   .card {
     
-    height: 550px;
+    height: 545px;
     width: 500px;
     background-color: #ffffff;
     border-radius: 10px;
