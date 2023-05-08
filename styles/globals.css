@@ -15,7 +15,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 30px 200px 30px;
+  padding: 35px 200px 35px;
 
   background: rgba(255, 255, 255, 0.05);
 
@@ -29,7 +29,7 @@ a {
   font-family: "Roboto", sans-serif;
   color: #3e3e3f;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Social */
