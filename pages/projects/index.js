@@ -13,7 +13,7 @@ const Project = () => {
       </Head>
     <Navbar/>
     <Social/>
-    <div className='relative flex justify-center items-center h-[32rem]'>
+    <div className='relative flex justify-center items-center h-[35rem]'>
      <h1 className= "text-7xl text-[#909090]">No ideas</h1>
     </div>
     

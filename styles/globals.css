@@ -37,7 +37,7 @@ a {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin: 80px 15px 0px;
+  margin: 85px 15px 0px;
 }
 .icon {
   padding-top: 5px;
@@ -47,7 +47,7 @@ a {
 }
 .ver {
   border-left: 1px solid #868383;
-  height: 200px;
+  height: 215px;
   margin-left: 9px;
 }
 
@@ -57,9 +57,9 @@ a {
 .frontend {
   font-family: "Roboto", sans-serif;
   color: #3e3e3f;
-  padding-top: 140px;
+  padding-top: 155px;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .content {
@@ -71,9 +71,9 @@ a {
 }
 
 .content h2 {
-  font-size: 8em;
+  font-size: 9em;
   position: absolute;
-  transform: translate(0, -40%);
+  transform: translate(0, -30%);
   font-family: "Poppins", sans-serif;
 }
 
@@ -137,7 +137,7 @@ a {
     width: 500px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: -0.5rem 0 2rem #c0c0c0;
+    box-shadow: -0.5rem 0 2rem #e3e3e3;
     
     transition: 0.4s ease-out;
     position: relative;
