@@ -1,15 +1,9 @@
-import React from "react";
-import AboutEd from "./aboutcard/AboutEd";
-import AboutMain from "./aboutcard/AboutMain";
-import AboutSkl from "./aboutcard/AboutSkl";
+import React from 'react'
+
 const AboutPage = () => {
   return (
-    <div class="about">
-    <AboutEd/>
-    <AboutSkl/>
-    <AboutMain/>
-    </div>
-  );
-};
+    <div>AboutPage</div>
+  )
+}
 
-export default AboutPage;
+export default AboutPage
