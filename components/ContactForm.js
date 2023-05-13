@@ -11,7 +11,7 @@ const ContactForm = () => {
         <p> Your message does not have to be formal.</p>
         </div>
     </div>
-    <div className="max-w-xl  ml-auto mr-40 -mt-80 bg-white rounded-lg shadow-xl overflow-hidden">
+    <div className="max-w-xl  ml-auto mr-40 -mt-80 bg-gray-100 rounded-lg shadow-xl overflow-hidden">
     <div className="px-12 py-20">
       
       <form>
