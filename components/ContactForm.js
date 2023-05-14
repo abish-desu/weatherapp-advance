@@ -3,15 +3,18 @@ import React from 'react'
 const ContactForm = () => {
   return (
     
-   <div className='form-animate'>
+   <>
+    <div className=''>
     <div className='max-w-xl m-36 '>
       <div className='ml-5'>
-        <h1 className='text-4xl  text-gray-500'>LET'S HAVE A TALK</h1>
-        <p className='pt-6 '>Please leave your message here. I will get back to you as soon as possible.</p>
-        <p> Your message does not have to be formal.</p>
+        <h1 className='text-4xl  text-gray-500 p-animate '>LET'S HAVE A TALK</h1>
+        <p className='pt-6 p2-animate'>Please leave your message here. I will get back to you as soon as possible.</p>
+        <p className='p3-animate'> Your message does not have to be formal.</p>
         </div>
     </div>
-    <div className="max-w-xl  ml-auto mr-40 -mt-80 bg-gray-50 rounded-lg shadow-xl overflow-hidden">
+    </div>
+    <div className=''>
+    <div className="max-w-xl ml-auto mr-40 -mt-80 bg-gray-50 rounded-lg shadow-xl overflow-hidden f-animate">
     <div className="px-12 py-20">
       
       <form>
@@ -33,8 +36,9 @@ const ContactForm = () => {
       </form>
     </div>
   </div>
-  
   </div>
+  
+  </>
   
  
   )
