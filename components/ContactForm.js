@@ -3,7 +3,7 @@ import React from 'react'
 const ContactForm = () => {
   return (
     
-   <>
+   <div className='form-animate'>
     <div className='max-w-xl m-36 '>
       <div className='ml-5'>
         <h1 className='text-4xl  text-gray-500'>LET'S HAVE A TALK</h1>
@@ -34,7 +34,7 @@ const ContactForm = () => {
     </div>
   </div>
   
-  </>
+  </div>
   
  
   )
