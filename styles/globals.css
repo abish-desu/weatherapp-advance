@@ -119,12 +119,12 @@ a:hover {
   padding-top: 155px;
   font-weight: 100;
   font-size: 55px;
-  animation:fade-up 1s;
+ 
 }
 
 .content {
   display: flex;
-  animation:fade-up 1s;
+  animation:fade-up 2s;
   min-height: 70vh;
   align-items: center;
   justify-content: center;
