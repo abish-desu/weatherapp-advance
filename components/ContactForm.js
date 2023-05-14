@@ -28,9 +28,7 @@ const ContactForm = () => {
           <textarea className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Enter your message"></textarea>
         </div>
         <div className="flex items-center justify-end">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-            Send
-          </button>
+        <button class="px-6 py-2  text-sm bg-violet-500 text-white rounded-md shadow-sm hover:scale-125 ease-in-out duration-150">Send</button>
         </div>
       </form>
     </div>

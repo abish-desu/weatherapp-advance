@@ -21,7 +21,8 @@ const Social = () => {
           <BsGithub
           />
         </a>
-        <a className="icon">
+        <a className="icon"
+        href="https://www.linkedin.com/in/abish-magar-01170a235/">
           <BsLinkedin />
         </a>
         <div className="ver"></div>

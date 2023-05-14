@@ -2,6 +2,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fade-up{
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+  
+}
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+  
+}
 @layer base {
   html {
     font-family: "Roboto", sans-serif;
@@ -67,17 +90,19 @@ a:hover {
 /* home */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+
 .frontend {
   font-family: "Roboto", sans-serif;
   color: #3e3e3f;
   padding-top: 155px;
   font-weight: 100;
   font-size: 55px;
+  animation:fade-up 1s;
 }
 
 .content {
   display: flex;
-
+  animation:fade-up 1s;
   min-height: 70vh;
   align-items: center;
   justify-content: center;
