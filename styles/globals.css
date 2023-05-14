@@ -124,11 +124,17 @@ a:hover {
 
 .content {
   display: flex;
-  animation:fade-up 2s;
-  min-height: 70vh;
+  animation:fade-down 1s;
+  min-height: 60vh;
   align-items: center;
   justify-content: center;
 }
+
+ .content-2{
+  position: absolute;
+  left: 45%;
+  animation: fade-up 2s;
+ }
 
 .content h2 {
   font-size: 9em;
