@@ -16,38 +16,53 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 35px 200px 35px;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
+
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: #3e3e3f;
   font-weight: 300;
   font-size: 18px;
+  
 }
+
+a:hover {
+  transform: scale(1.1);
+}
+
+
 
 /* Social */
 .social {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin: 85px 15px 0px;
+  margin: 80px 15px 0px;
 }
+
 .icon {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
   color: #868383;
+  transition: transform 0.3s ease;
 }
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
 .ver {
   border-left: 1px solid #868383;
   height: 215px;
   margin-left: 9px;
 }
+
 
 /* home */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");

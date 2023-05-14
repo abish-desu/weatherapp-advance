@@ -1,6 +1,8 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { SiDiscord } from "react-icons/si";
+import {BsGithub} from "react-icons/bs"
+
 
 const Social = () => {
   return (
@@ -13,6 +15,11 @@ const Social = () => {
           className="icon"
         >
           <SiDiscord />
+        </a>
+        <a className="icon"
+        href="https://github.com/abish-desu">
+          <BsGithub
+          />
         </a>
         <a className="icon">
           <BsLinkedin />
