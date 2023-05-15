@@ -24,9 +24,9 @@ const Project = () => {
       <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
       </p>
       <div className='pt-4'>
-      <Link href='https://github.com/abish-desu/menu-tracker' >
+      <Link href='https://github.com/abish-desu/MenuTracker' >
       <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
-      </Link>      </div>
+      </Link></div>
 
 
 </div>
@@ -48,7 +48,7 @@ const Project = () => {
      <div className='w-[300px] mt-[25px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d2 border-t-[3px] border-yellow-500'>
      <div className='mx-6 mt-8'>
       <h2 className='font-extrabold text-lg'>WEATHER APP</h2>
-      <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
+      <p className='text-base pt-2'>It is a weather app which displays weather status of the current location. Implemented using React.js.
       </p>
       <div className='pt-4'>
         <Link href='https://github.com/abish-desu/weather-app' >
@@ -63,10 +63,11 @@ const Project = () => {
      <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden f-animate h-[250px] border-t-[3px] border-red-500'>
      <div className='mx-6 mt-8'>
       <h2 className='font-extrabold text-lg'>DISCORD BOT</h2>
-      <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
+      <p className='text-base pt-2'>
+      Guess The Jumble Word Game Bot!. Implemented using Javascript and Discord.js.
       </p>
       <div className='pt-4'>
-      <Link href='https://github.com/abish-desu/' >
+      <Link href='https://github.com/abish-desu/discord-game-bot' >
       <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
       </Link>      </div>
 
