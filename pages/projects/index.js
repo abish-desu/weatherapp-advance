@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
+import Link from "next/link";
+
 const Project = () => {
   return (
     <>
@@ -16,12 +18,61 @@ const Project = () => {
     <div className='w-[1000px] mx-auto mt-[75px]'>
   <div className=' flex justify-evenly items-center '>
     
-     <div className='w-[300px] h-[250px]  bg-white rounded-lg shadow-xl overflow-hidden p-animate border-t-[3px] border-cyan-500'></div>
-     <div className='flex flex-col'>
-     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d1 border-t-[3px] border-green-600'></div>
-     <div className='w-[300px] mt-[25px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d2 border-t-[3px] border-yellow-500'></div>
+     <div className='w-[300px] h-[250px]  bg-white rounded-lg shadow-xl overflow-hidden p-animate border-t-[3px] border-cyan-500'>
+      <div className='mx-6 mt-8'>
+      <h2 className='font-extrabold text-lg'>MENU TRACKER</h2>
+      <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
+      </p>
+      <div className='pt-4'>
+      <Link href='https://github.com/abish-desu/menu-tracker' >
+      <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
+      </Link>      </div>
+
+
+</div>
      </div>
-     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden f-animate h-[250px] border-t-[3px] border-red-500'></div>
+     <div className='flex flex-col'>
+     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d1 border-t-[3px] border-green-600'>
+     <div className='mx-6 mt-8'>
+      <h2 className='font-extrabold text-lg'>PORTFOLIO</h2>
+      <p className='text-base pt-2'>Personal portfolio website built with Next.js and React.js.
+      </p>
+      <div className='pt-4'>
+      <Link href='https://github.com/abish-desu/portfolio-next' >
+      <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
+      </Link>      </div>
+
+
+</div>
+     </div>
+     <div className='w-[300px] mt-[25px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d2 border-t-[3px] border-yellow-500'>
+     <div className='mx-6 mt-8'>
+      <h2 className='font-extrabold text-lg'>WEATHER APP</h2>
+      <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
+      </p>
+      <div className='pt-4'>
+        <Link href='https://github.com/abish-desu/weather-app' >
+      <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
+      </Link>
+      </div>
+
+
+</div>
+     </div>
+     </div>
+     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden f-animate h-[250px] border-t-[3px] border-red-500'>
+     <div className='mx-6 mt-8'>
+      <h2 className='font-extrabold text-lg'>DISCORD BOT</h2>
+      <p className='text-base pt-2'>It is a menu tracking system that tracks items ordered by the customers. Implemented using Next.js and Typescript with React.js.
+      </p>
+      <div className='pt-4'>
+      <Link href='https://github.com/abish-desu/' >
+      <button className="px-6 py-2  text-sm bg-slate-700 text-white rounded-md shadow-sm hover:scale-105 ase-in-out duration-75">View</button>
+      </Link>      </div>
+
+
+</div>
+     </div>
     </div>
     </div>
     </>
