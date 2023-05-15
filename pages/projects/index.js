@@ -13,10 +13,17 @@ const Project = () => {
       </Head>
     <Navbar/>
     <Social/>
-    <div className='relative flex justify-center items-center h-[35rem]'>
-     <h1 className= "text-7xl text-[#909090]">No ideas</h1>
-    </div>
+    <div className='w-[1000px] mx-auto mt-[75px]'>
+  <div className=' flex justify-evenly items-center '>
     
+     <div className='w-[300px] h-[250px]  bg-white rounded-lg shadow-xl overflow-hidden p-animate border-t-[3px] border-cyan-500'></div>
+     <div className='flex flex-col'>
+     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d1 border-t-[3px] border-green-600'></div>
+     <div className='w-[300px] mt-[25px]  bg-white rounded-lg shadow-xl overflow-hidden h-[250px] d2 border-t-[3px] border-yellow-500'></div>
+     </div>
+     <div className='w-[300px]  bg-white rounded-lg shadow-xl overflow-hidden f-animate h-[250px] border-t-[3px] border-red-500'></div>
+    </div>
+    </div>
     </>
   )
 }
