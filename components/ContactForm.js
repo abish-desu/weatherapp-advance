@@ -20,7 +20,7 @@ const ContactForm = () => {
       <form>
         <div className="mb-8">
          
-          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Name"></input>
+          <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email"></input>
         </div>
         <div className="mb-8">
          
