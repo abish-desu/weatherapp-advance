@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Social from "@/components/Social";
 import Head from "next/head";
+import Bg from "@/components/Bg";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Navbar/>
+    <Bg/>
     <Social/>
   
     </>

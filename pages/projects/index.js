@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
 import Link from "next/link";
+import Bg from '@/components/Bg';
 
 const Project = () => {
   return (
@@ -14,6 +15,7 @@ const Project = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Navbar/>
+    <Bg/>
     <Social/>
     <div className='w-[1000px] mx-auto mt-[75px]'>
   <div className=' flex justify-evenly items-center '>

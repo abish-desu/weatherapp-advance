@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ContactForm from '@/components/ContactForm'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
+import Bg from '@/components/Bg'
 const Contact = () => {
   return (<>
     <Head>
@@ -12,6 +13,7 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
   <Navbar/>
+  <Bg/>
   <Social/>
  <ContactForm/>
     </>

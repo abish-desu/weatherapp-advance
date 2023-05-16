@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Bg from '@/components/Bg'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
 import HomePage from '@/components/HomePage'
@@ -18,10 +18,12 @@ export default function Home() {
      <main className='main'>
       
       <Navbar/>
-      <div>
+      <Bg/>
+    
+      
       <Social/>
       <HomePage/>
-      </div>
+     
      </main>
     </>
   )
