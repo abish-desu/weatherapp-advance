@@ -3,8 +3,8 @@ import React from 'react'
 const ContactForm = () => {
   return (
     
-   <>
-    <div className=''>
+   <div className='relative z-10'>
+    
     <div className='max-w-xl m-36 '>
       <div className='ml-5'>
         <h1 className='text-4xl  text-gray-500 p-animate '>LET'S HAVE A TALK</h1>
@@ -12,7 +12,7 @@ const ContactForm = () => {
         <p className='p3-animate'> Your message does not have to be formal.</p>
         </div>
     </div>
-    </div>
+ 
     <div className=''>
     <div className="max-w-xl ml-auto mr-40 -mt-80 bg-gray-50 rounded-lg shadow-xl overflow-hidden f-animate">
     <div className="px-12 py-20">
@@ -38,7 +38,7 @@ const ContactForm = () => {
   </div>
   </div>
   
-  </>
+  </div>
   
  
   )

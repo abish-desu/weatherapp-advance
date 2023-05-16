@@ -17,7 +17,7 @@ const Project = () => {
     <Navbar/>
     <Bg/>
     <Social/>
-    <div className='w-[1000px] mx-auto mt-[75px]'>
+    <div className='w-[1000px] mx-auto mt-[75px] relative z-10'>
   <div className=' flex justify-evenly items-center '>
     
      <div className='w-[300px] h-[250px]  bg-white rounded-lg shadow-xl overflow-hidden p-animate border-t-[3px] border-cyan-500'>

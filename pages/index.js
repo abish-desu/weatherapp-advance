@@ -18,11 +18,13 @@ export default function Home() {
      <main className='main'>
       
       <Navbar/>
-      <Bg/>
     
       
+      <Bg/>
+      <div className='relative'>
       <Social/>
       <HomePage/>
+      </div>
      
      </main>
     </>
