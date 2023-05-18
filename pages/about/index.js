@@ -16,6 +16,9 @@ const About = () => {
     <Navbar/>
     <Bg/>
     <Social/>
+    <div className='relative flex justify-center items-center h-[35rem]'>
+     <p className= "text-5xl font-thin text-[#a0a0a0]">I DONT KNOW ABOUT MYSELF</p>
+    </div>
   
     </>
   );
