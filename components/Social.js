@@ -17,11 +17,13 @@ const Social = () => {
           <SiDiscord />
         </a>
         <a className="icon"
+          target="blank"
         href="https://github.com/abish-desu">
           <BsGithub
           />
         </a>
         <a className="icon"
+          target="blank"
         href="https://www.linkedin.com/in/abish-magar-01170a235/">
           <BsLinkedin />
         </a>
