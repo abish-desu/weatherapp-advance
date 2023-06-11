@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
-
+import Image from 'next/image'
+import Bg from '../public/bg.jpeg'
 
 export default function Home() {
   return (
@@ -11,9 +11,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" className='filter invert-100' href="/logow.svg" />
       </Head>
-     <main className='main'>
-      
-     </main>
+      <div className='absolute'>
+      <Image className='h-screen w-screen overflow-hidden ' src={Bg} ></Image>
+      </div>
+
+
+     <div className=" relative flex flex-col items-center">
+          <input className="outline-none border border-white p-2 mb-4 rounded-3xl bg-transparent w-[400px]" />
+          <h1 className='text-5xl font-thin  text-white'>Search your city here</h1>
+        </div>
+    
     </>
   )
 }
