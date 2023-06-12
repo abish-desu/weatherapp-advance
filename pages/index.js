@@ -6,8 +6,7 @@ import { Cards } from "@/components/Cards";
 import axios from "axios";
 export default function Home() {
   const [cityName, setCityName] = useState("");
-  const [latitude, setLatitude] = useState("");
-  const [longitude, setLongitude] = useState("");
+ 
 
   const handleInputChange = (e) => {
     setCityName(e.target.value);
@@ -23,16 +22,10 @@ export default function Home() {
         )}&key=${process.env.NEXT_PUBLIC_API_KEY}`
       );
 
-      const coordinates = response.data.results[0].geometry;
-      const latitude = coordinates.lat;
-      const longitude = coordinates.lng;
+      const { lat, lng } = response.data.results[0].geometry;
 
-      setLatitude(latitude);
-      setLongitude(longitude);
-      console.log(latitude);
-      console.log(longitude);
-
-      const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+    
+      const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
         fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
