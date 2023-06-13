@@ -84,7 +84,7 @@ setCityName("");
         </form>
         {show ? (
           <h1 className="text-5xl font-thin text-white pt-4">
-            Search your city here
+            Search Your City Here
           </h1>
         ) : (
           <Card currentWeather={currentWeather} showCity={showCity}/>
