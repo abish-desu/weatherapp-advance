@@ -2,14 +2,33 @@ import Head from "next/head";
 import Image from "next/image";
 import Bg from "../public/bg.jpeg";
 import { useState } from "react";
-import { Cards } from "@/components/Cards";
+import Card from "@/components/Cards";
 import axios from "axios";
+
 export default function Home() {
   const [cityName, setCityName] = useState("");
- 
+  const [show, setShow] = useState(true);
+  const [currentWeather,setCurrentWeather] = useState({});
 
   const handleInputChange = (e) => {
     setCityName(e.target.value);
+  };
+
+  const fetchData = async (lat, lng) => {
+    try {
+      const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+
+      // Process the response data as per your project requirements
+      const currentWeather = data.current_weather;
+      setCurrentWeather(currentWeather);
+      setShow(false);
+      
+      console.log(currentWeather);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   const handleFormSubmit = async (e) => {
@@ -24,19 +43,7 @@ export default function Home() {
 
       const { lat, lng } = response.data.results[0].geometry;
 
-    
-      const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
-        fetch(apiUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          // Process the response data as per your project requirements
-          const currentWeather = data.current_weather;
-          console.log(currentWeather);
-        })
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-        });
-        
+      fetchData(lat, lng);
     } catch (error) {
       console.error("Error fetching coordinates:", error);
     }
@@ -52,10 +59,10 @@ export default function Home() {
       </Head>
       <div className="absolute">
         <Image
-          className="h-screen w-screen overflow-hidden "
+          className="h-screen w-screen overflow-hidden"
           src={Bg}
           alt="bg"
-        ></Image>
+        />
       </div>
 
       <div className="flex flex-col items-center justify-center pt-[250px] relative">
@@ -66,14 +73,21 @@ export default function Home() {
             value={cityName}
             onChange={handleInputChange}
           />
-          <button 
-           className="outline-none border border-white p-2 mb-4 rounded-3xl bg-transparent ml-2 text-white pl-4 pr-4" 
-          type="submit">Click me</button>
+          <button
+            className="outline-none border border-white p-2 mb-4 rounded-3xl bg-transparent ml-2 text-white pl-4 pr-4"
+            type="submit"
+          >
+            Click me
+          </button>
         </form>
-
-        <h1 className="text-5xl font-thin text-white pt-4">
-          Search your city here
-        </h1>
+        {show ? (
+          <h1 className="text-5xl font-thin text-white pt-4">
+            Search your city here
+          </h1>
+        ) : (
+          <Card currentWeather={currentWeather} cityName={cityName}/>
+        )}
+       
       </div>
     </>
   );
