@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Card = ({currentWeather,cityName}) => {
+const Card = ({currentWeather,showCity}) => {
   const {temperature,weathercode} = currentWeather;
+  
   return (
     <div className="max-w-md p-8 mx-auto rounded-lg bg-transparent dark:text-gray-100">
     <div className="flex justify-between space-x-8">
@@ -17,7 +18,7 @@ const Card = ({currentWeather,cityName}) => {
           <rect width="45.255" height="32" x="73.373" y="400" transform="rotate(-45.001 96.002 416.003)"></rect>
           <rect width="45.255" height="32.001" x="393.373" y="80" transform="rotate(-45 416 96)"></rect>
         </svg>
-        <h1 className="text-xl font-semibold">{cityName}</h1>
+        <h1 className="text-xl font-semibold">{showCity.toUpperCase()}</h1>
       </div>
       <span className="font-normal text-8xl">{temperature}°</span>
     </div>

@@ -6,6 +6,7 @@ import Card from "@/components/Cards";
 import axios from "axios";
 
 export default function Home() {
+  const [showCity ,setShowCity] = useState("")
   const [cityName, setCityName] = useState("");
   const [show, setShow] = useState(true);
   const [currentWeather,setCurrentWeather] = useState({});
@@ -42,7 +43,8 @@ export default function Home() {
       );
 
       const { lat, lng } = response.data.results[0].geometry;
-
+      setShowCity(cityName);
+setCityName("");
       fetchData(lat, lng);
     } catch (error) {
       console.error("Error fetching coordinates:", error);
@@ -85,7 +87,7 @@ export default function Home() {
             Search your city here
           </h1>
         ) : (
-          <Card currentWeather={currentWeather} cityName={cityName}/>
+          <Card currentWeather={currentWeather} showCity={showCity}/>
         )}
        
       </div>
