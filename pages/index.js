@@ -36,6 +36,10 @@ export default function Home() {
     e.preventDefault();
 
     try {
+      if (cityName.trim() === "") { // Check for empty or whitespace input
+        alert("please input a city name") }
+      setShowCity(cityName);
+setCityName("");
       const response = await axios.get(
         `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
           cityName
@@ -43,8 +47,7 @@ export default function Home() {
       );
 
       const { lat, lng } = response.data.results[0].geometry;
-      setShowCity(cityName);
-setCityName("");
+   
       fetchData(lat, lng);
     } catch (error) {
       console.error("Error fetching coordinates:", error);
